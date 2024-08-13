@@ -81,8 +81,7 @@ each row has the following fields:
 - Each row defines a *pattern-plus-action rule*, where the pattern is composed of 
 the first four fields, and the action is specified by the last three fields.
 - An incoming packet header (with specified `srcIP` and `destIP` addresses) 
-matches a rule if `srcIP ∈ [srcIP lo, srcIP hi]`, and `destIP ∈ [destIP lo, 
-destIP hi]`. 
+matches a rule if `srcIP ∈ [srcIP lo, srcIP hi]`, and `destIP ∈ [destIP lo, destIP hi]`. 
 - If a match is found, the switch applies the corresponding action as follows:
     - If `actionType = forward` then the packet is forwarded to the port 
     number specified by `actionVal`, and the `pktCount` is incremented.
@@ -110,11 +109,11 @@ to switch *i + 1* if *i < k − 1*.
 
 ## Usage <a name="usage"></a>
 
-- The program can be invoked to simulate a master switch using `net_sim master 
-[nSwitch]` where `nSwitch ≤ MAX_NSW(= 7)` is the number of switches in the network.
-- The program can also be invoked to simulate a TOR packet switch using `net_sim 
-pswi dataFile (null|pswj) (null|pswk) IPlow-IPhigh `.
-- As an example, `net_sim psw4 file1.dat null psw5 100-110`. 
+- The program can be invoked to simulate a master switch using `./main master [nSwitch] [port]` 
+where `nSwitch ≤ MAX_NSW(= 7)` is the number of switches in the network.
+- The program can also be invoked to simulate a TOR packet switch using `./main pswi 
+dataFile (null|pswj) (null|pswk) IPlow-IPhigh [master_switch_ip_address] [master_switch_port]`.
+- As an example, `./main psw4 file1.dat null psw5 100-110 127.0.0.1 9060`. 
     - The program simulates packet switch number *i* by processing the commands 
     in the specified `dataFile`.
     - Port 1 (respectively, port 2) of packet switch *i* is connected to switch 
