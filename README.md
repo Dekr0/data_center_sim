@@ -6,8 +6,8 @@ type of data communication process between switches.
     - Socket
 - The background and specification is directly quoted with some amount rephrasing 
 and trimming from the specification proposed by Prof. E. Elmallah. To see the 
-original specification, please read [FIFO version](url)  and [Socket version
-](url).
+original specification, please read [FIFO version](https://github.com/Dekr0/data_center_sim/blob/main/spec_fifo.pdf) and [Socket version
+](https://github.com/Dekr0/data_center_sim/blob/main/spec_socket.pdf).
 
 ## Table of Contents
 
