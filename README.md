@@ -110,11 +110,11 @@ to switch *i + 1* if *i < k − 1*.
 
 ## Usage <a name="usage"></a>
 
-- The program can be invoked to simulate a master switch using `net_sim master 
-[nSwitch]` where `nSwitch ≤ MAX_NSW(= 7)` is the number of switches in the network.
+- The program can be invoked to simulate a master switch using `./main master [nSwitch]`
+- where `nSwitch ≤ MAX_NSW(= 7)` is the number of switches in the network.
 - The program can also be invoked to simulate a TOR packet switch using `net_sim 
 pswi dataFile (null|pswj) (null|pswk) IPlow-IPhigh `.
-- As an example, `net_sim psw4 file1.dat null psw5 100-110`. 
+- As an example, `./main psw4 file1.dat null psw5 100-110`. 
     - The program simulates packet switch number *i* by processing the commands 
     in the specified `dataFile`.
     - Port 1 (respectively, port 2) of packet switch *i* is connected to switch 
