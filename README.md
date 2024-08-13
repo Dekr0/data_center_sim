@@ -4,6 +4,9 @@ within a simplified hypothetical data center network.
 type of data communication process between switches.
     - [FIFOs](https://github.com/Dekr0/data_center_sim/tree/fifo)
     - [Socket](https://github.com/Dekr0/data_center_sim/tree/socket)
+- After two years of this program being made and come back revisit it recently, 
+there are flaws in the current implementation. I'm considering re-implement 
+the program with C or Zig, and try to provide a more detail simulation.
 - The background and specification is directly quoted with some amount rephrasing 
 and trimming from the specification proposed by Prof. E. Elmallah. To see the 
 original specification, please read [FIFO version](https://github.com/Dekr0/data_center_sim/blob/main/spec_fifo.pdf) and [Socket version
