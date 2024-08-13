@@ -110,9 +110,18 @@ to switch *i + 1* if *i < k − 1*.
 
 ## Usage <a name="usage"></a>
 
+### Quick startup
+
+- The Makefile include some directives to launch the master switch and the 
+packet switches. They don't need to be execute in order.
+- `make s1` and `make s2` will launch two separate instances of packet switches.
+- `make master` will launch the master switch.
+
+### Detail Usage
+
 - The program can be invoked to simulate a master switch using `./main master [nSwitch]`
 - where `nSwitch ≤ MAX_NSW(= 7)` is the number of switches in the network.
-- The program can also be invoked to simulate a TOR packet switch using `./ main pswi dataFile (null|pswj) (null|pswk) IPlow-IPhigh`.
+- The program can also be invoked to simulate a TOR packet switch using `./main pswi dataFile (null|pswj) (null|pswk) IPlow-IPhigh`.
 - As an example, `./main psw4 file1.dat null psw5 100-110`. 
     - The program simulates packet switch number *i* by processing the commands 
     in the specified `dataFile`.
