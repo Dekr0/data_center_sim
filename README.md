@@ -2,12 +2,12 @@
 within a simplified hypothetical data center network.
 - There are two implementations of this program. The main difference is the 
 type of data communication process between switches.
-    - FIFOs
-    - Socket
+    - [FIFOs](https://github.com/Dekr0/data_center_sim/tree/fifo)
+    - [Socket](https://github.com/Dekr0/data_center_sim/tree/socket)
 - The background and specification is directly quoted with some amount rephrasing 
 and trimming from the specification proposed by Prof. E. Elmallah. To see the 
-original specification, please read [FIFO version](url)  and [Socket version
-](url).
+original specification, please read [FIFO version](https://github.com/Dekr0/data_center_sim/blob/main/spec_fifo.pdf) and [Socket version
+](https://github.com/Dekr0/data_center_sim/blob/main/spec_socket.pdf).
 
 ## Table of Contents
 
